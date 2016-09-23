@@ -84,7 +84,7 @@ def pad_array(a, npd=None, padtype='OddReflectionTaper'):
     #  [ ] if statements below - Finally add an elif to the if statements
     #                            below. Add a descriptive comment.
     if str(padtype).lower() not in padopts and not _is_number(padtype):
-        raise ValueError('Pad type not understood')
+        raise ValueError('Invalid padtype "{}"'.format(padtype))
     # If npd is not provided, populate with next power of 2
     npt = []
     nd = a.ndim
