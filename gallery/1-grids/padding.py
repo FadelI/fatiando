@@ -43,8 +43,8 @@ for padtype, ax in zip(padtypes, axes.ravel()[1:]):
     pad_x, pad_y = gridder.pad_coords([x, y], shape, nps)
     padshape = padded_data.shape
     ax.set_title(padtype)
-    ax.pcolormesh(pad_y.reshape(padshape), pad_x.reshape(padshape), padded_data,
-                  cmap='RdBu_r', vmin=vmin, vmax=vmax)
+    ax.pcolormesh(pad_y.reshape(padshape), pad_x.reshape(padshape),
+                  padded_data, cmap='RdBu_r', vmin=vmin, vmax=vmax)
     ax.set_xlim(pad_y.min(), pad_y.max())
     ax.set_ylim(pad_x.min(), pad_x.max())
 plt.tight_layout(w_pad=0)
