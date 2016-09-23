@@ -10,6 +10,12 @@ Version 0.5
 
 **Changes**:
 
+* Better internal organization of the ``fatiando.gridder`` module. Users won't
+  have to modify theirs existing code. These changes only impact the developer
+  side. Mainly, the module is now a package with functions divided into small
+  modules, making it easier to read and modify the code. Also implemented many
+  new tests, reaching 100% coverage, and several new gallery plots.
+  (`PR 297 <https://github.com/fatiando/fatiando/pull/297>`__)
 * Add copy method to ``fatiando.mesher`` objects.
   (`PR 301  <https://github.com/fatiando/fatiando/pull/301>`__)
 * Move from ``distutils`` to ``setuptools`` in ``setup.py``, as recommended in
