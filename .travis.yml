@@ -9,11 +9,6 @@ os:
     - linux
     - osx
 
-addons:
-    apt:
-        packages:
-            - xvfb  # For mayavi headless (needed to build the gallery)
-
 # Need to fetch a deeper clone because the default depth Travis uses (50) isn't
 # enough to get the git tags so versioneer can't find the correct version
 # number.
